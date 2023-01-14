@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Meu exemplo</title>
+  </head>
+  <body>
+    <form id="myForm">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <label for="age">Idade:</label>
+        <input type="text" id="age" name="age">
+        <br>
+        <button type="submit" onclick="submitForm()">Enviar</button>
+      </form>
+      
+      <script>
+        function submitForm() {
+          // Pega os valores dos campos de entrada
+          var name = document.getElementById("name").value;
+          var age = document.getElementById("age").value;
+        
+          // Verifica se os campos não estão vazios
+          if (name === "" || age === "") {
+            alert("Os campos não podem ser vazios.");
+            return;
+          }
+      
+          // Verifica se a idade é um número válido
+          if (isNaN(age)) {
+            alert("Idade deve ser um número válido.");
+            return;
+          }
+      
+          // Exibe uma mensagem de alerta com a seguinte mensagem
+          alert("Olá, " + name + "! Você tem " + age + " anos.");
+        }
+      </script>s
+  </body>
+</html>

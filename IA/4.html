@@ -1,0 +1,17 @@
+<body onload="init()">
+    <div id="myDiv"></div>
+    <script>
+      function init() {
+        // Cria o elemento p
+        var myP = document.createElement("p");
+  
+        // Define o texto do elemento p
+        myP.innerHTML = "Olá, mundo!";
+  
+        // Adiciona o elemento p ao elemento div com id "myDiv"
+        var myDiv = document.getElementById("myDiv");
+        myDiv.appendChild(myP);
+      }
+    </script>
+  </body>
+  

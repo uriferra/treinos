@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Meu código JavaScript</title>
+</head>
+<body>
+  <script>
+    //cria a tabela
+var table = document.createElement("table");
+//cria o corpo da tabela
+var tbody = document.createElement("tbody");
+table.appendChild(tbody);
+
+for (var i = 1; i <= 270; i++) {
+    var tr = document.createElement("tr");
+    for (var j = 1; j <= 270; j++) {
+        var td = document.createElement("td");
+        td.innerHTML = i * j;
+        tr.appendChild(td);
+    }
+    tbody.appendChild(tr);
+}
+//adiciona a tabela ao corpo da página
+document.body.appendChild(table);
+  </script>
+</body>
+</html>
