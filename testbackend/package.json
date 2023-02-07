@@ -1,0 +1,18 @@
+{
+  "name": "testbackend",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "http-server": "^14.1.1",
+    "mysql2": "^3.0.1",
+    "node-static": "^0.7.11"
+  }
+}
